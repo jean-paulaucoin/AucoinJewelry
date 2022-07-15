@@ -1,0 +1,371 @@
+.container {
+    display:grid;
+    height: auto;
+    grid-template-columns:
+        repeat(auto, minmax(15rem, 1fr));
+    grid-template-rows: 0.2fr 0.2fr 1.5fr 1.5fr 3.0fr 0.4fr;
+    grid-template-areas:
+                         "topNav topNav topNav topNav"
+                         "bottomNav bottomNav bottomNav bottomNav"
+                         "chp chp qs mj"
+                         "chp chp wb mj"
+                         "why why why why"
+                         "footer footer footer footer";
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+#topNav {
+    background-color:white;
+    grid-area: topNav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". logo ."
+                         "socials logo search"
+                         ". logo .";
+    padding-top: 25px;
+}
+
+#bottomNav {
+    background-color:white;
+    grid-area: bottomNav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Home Earrings Pendants MensJewelry ReligiousJewelry QuickShops";
+}
+
+#chp {
+    background-image: url(customIMG.jpg);
+    grid-area: chp;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . ."
+                         ". chpBody ."
+                         ". . .";
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px; 
+}
+
+#chpBody {
+    color:white;
+    grid-area: chpBody;
+    text-align: center;
+}
+
+#qs {
+    background-image: url(quickIMG.jpg);
+    grid-area: qs;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . "
+                         ". . . "
+                         ". . . "
+                         "qsBody qsBody qsBody";
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#qsBody {
+    color:white;
+    grid-area: qsBody;
+}
+
+#wb {
+    background-image: url(weddingIMG.jpg);
+    grid-area: wb;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . "
+                         ". . . "
+                         ". . . "
+                         "wbBody wbBody wbBody";
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#wbBody {
+    color:white;
+    grid-area: wbBody;
+}
+
+
+#mj {
+    background-image: url(menIMG.jpg);
+    grid-area: mj;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . "
+                         ". . . "
+                         ". . . "
+                         "mjBody mjBody mjBody";
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#mjBody {
+    color:white;
+    grid-area: mjBody;
+}
+
+#why {
+    background-image: url(whyIMG.png);
+    grid-area: why;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: ". ."
+                         ". whyBody"
+                         ". .";
+    text-align: left;
+    color:white;
+}
+
+#whyTitle{
+    font-size:30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#whyBody {
+    grid-area: whyBody;
+    padding-top: 30px;
+    
+}
+
+#footer {
+    background-color:white;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". logo ."
+                         "socials logo search"
+                         ". logo .";
+}
+
+#socials {
+    grid-area: socials;
+    text-align: left;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#search {
+    grid-area: search;
+    text-align: right;
+}
+
+#Home {
+    color:black;
+    grid-area: Home;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Home:hover {
+    grid-area: Home;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+}
+
+#Earrings {
+    color:black;
+    grid-area: Earrings;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Earrings:hover {
+    grid-area: Earrings;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Pendants {
+    color:black;
+    grid-area: Pendants;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Pendants:hover {
+    grid-area: Pendants;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+#MensJewelry {
+    color:black;
+    grid-area: MensJewelry;
+    font-family: 'Oswald', sans-serif;
+}
+
+#MensJewelry:hover {
+    grid-area: MensJewelry;
+    font-family: 'Oswald', sans-serif;
+}
+
+#ReligiousJewelry {
+    color:black;
+    grid-area: ReligiousJewelry;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+#ReligiousJewelry:hover {
+    grid-area: ReligiousJewelry;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+#QuickShops {
+    color:black;
+    grid-area: QuickShops;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+#QuickShops:hover {
+    grid-area: QuickShops;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+.facebookIcon {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+#facebookLink:hover {
+    text-decoration: none;
+}
+
+#instagramLink:hover {
+    text-decoration: none;
+}
+
+#twitterLink:hover {
+    text-decoration: none;
+}
+
+#youtubeLink:hover {
+    text-decoration: none;
+}
+
+.instagramIcon {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.twitterIcon {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.youtubeIcon {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.AucoinLogo {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#button {
+    border: 2px solid white;
+    background-color: #66615D;
+    color: white;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+#button:hover {
+    border: 2px solid #66615D;
+    background-color: white;
+    color: #66615D;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+#button2 {
+    border: 2px solid white;
+    background-color: #66615D;
+    color: white;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+#button2:hover {
+    border: 2px solid #66615D;
+    background-color: white;
+    color: #66615D;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+#searchButton {
+    border: 2px solid white;
+    background-color: #66615D;
+    color: white;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+#searchIconBtn {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr 1.2fr 0.2fr;
+        grid-template-areas: 
+            "topNav"
+            "bottomNav"
+            "chp"
+            "qs"
+            "wb"
+            "mj"
+            "why"
+            "footer"
+    }
+    
+    /*#topNav {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "socials logo search"
+    }
+    
+    #bottomNav {
+        
+    }*/
+        /*grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "Home Earrings Pendants MensJewelry ReligiousJewelry QuickShops";*/
+    }
+}
